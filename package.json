@@ -1,0 +1,15 @@
+{
+  "name": "codex-cli-prompt-capture",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Capture and inspect Codex CLI Responses API prompts locally.",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "capture:server": "node codex-capture.js",
+    "capture:codex": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/capture-codex.ps1"
+  },
+  "devDependencies": {
+    "@openai/codex": "^0.154.0"
+  }
+}

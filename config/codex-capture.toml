@@ -1,0 +1,15 @@
+#:schema https://developers.openai.com/codex/config-schema.json
+model = "codex-capture"
+model_provider = "capture"
+approval_policy = "never"
+sandbox_mode = "read-only"
+web_search = "disabled"
+
+[model_providers.capture]
+name = "Local prompt capture"
+base_url = "http://127.0.0.1:8998/v1"
+wire_api = "responses"
+requires_openai_auth = false
+request_max_retries = 0
+stream_max_retries = 0
+stream_idle_timeout_ms = 10000
